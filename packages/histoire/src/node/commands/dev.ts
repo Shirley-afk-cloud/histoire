@@ -7,9 +7,10 @@ export interface DevOptions {
   port: number
 }
 
-export async function dev (options: DevOptions) {
+export async function devCommand (options: DevOptions) {
   const config: HistoireConfig = {
     sourceDir: join(process.cwd(), 'src'),
+    outDir: join(process.cwd(), 'histoire-dist'),
     storyMatch: ['**/*.story.vue'],
   }
   const ctx: Context = {
