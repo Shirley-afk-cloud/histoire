@@ -1,3 +1,10 @@
+export interface StoryFile {
+  id: string
+  framework: string
+  component: any
+  story: Story
+}
+
 export interface Story {
   id: string
   title: string
@@ -8,14 +15,14 @@ export interface Story {
     type: 'grid'
     width: number
   }
+  file?: StoryFile
   lastSelectedVariant?: Variant
-  mountTime: number
 }
 
 export interface Variant {
   id: string
   title: string
-  initState: () => any
-  slots: () => Readonly<any>
-  state: any
+  initState?: () => any
+  slots?: () => Readonly<any>
+  state?: any
 }
