@@ -17,17 +17,15 @@ function initState () {
       <template #default="{ state }">
         <HstCheckbox
           v-model="state.checked"
-        >
-          Label
-        </HstCheckbox>
+          title="Label"
+        />
       </template>
 
       <template #controls="{ state }">
         <HstCheckbox
           v-model="state.checked"
-        >
-          Label
-        </HstCheckbox>
+          title="Label"
+        />
       </template>
     </Variant>
   </Story>
