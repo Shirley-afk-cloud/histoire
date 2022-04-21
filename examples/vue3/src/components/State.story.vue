@@ -48,9 +48,10 @@ function initState2 () {
           <span>{{ state.count }}</span>
         </div>
 
-        <HstText v-model="state.text">
-          Text
-        </HstText>
+        <HstText
+          v-model="state.text"
+          title="Text"
+        />
       </template>
     </Variant>
 
@@ -63,9 +64,10 @@ function initState2 () {
       </template>
 
       <template #controls="{ state }">
-        <HstText v-model="state.meow.foo">
-          meow.foo
-        </HstText>
+        <HstText
+          v-model="state.meow.foo"
+          title="meow.foo"
+        />
       </template>
     </Variant>
   </Story>
