@@ -6,7 +6,12 @@ const state = reactive({
   text: 'Meow',
 })
 
-const notSynced = ref(42)
+const synced = ref('hello')
+
+defineExpose({
+  state,
+  synced,
+})
 </script>
 
 <template>
@@ -17,7 +22,7 @@ const notSynced = ref(42)
       <h1>State</h1>
       <div>
         <pre>{{ state }}</pre>
-        <div>{{ { notSynced } }}</div>
+        <div>{{ { synced } }}</div>
         <input
           v-model.number="state.count"
           type="number"
@@ -26,8 +31,7 @@ const notSynced = ref(42)
           v-model="state.text"
         >
         <input
-          v-model.number="notSynced"
-          type="number"
+          v-model="synced"
         >
       </div>
 
@@ -45,6 +49,11 @@ const notSynced = ref(42)
         <HstText
           v-model="state.text"
           title="Text"
+        />
+
+        <HstText
+          v-model="synced"
+          title="synced"
         />
       </template>
     </Variant>
