@@ -30,7 +30,7 @@ Histoire is a tool to generate stories applications (or "books").
 
 A story is a scenario where you showcase in your browser one or more components for specific use cases.
 
-Stories are useful for several use cases:
+Stories are useful for several reasons:
 - Organize and document components for other developpers
 - Showcase different use cases covered by your components
 - Develop components in isolation
@@ -52,6 +52,63 @@ It basically gives you:
 - Copiable code to reproduce the same result in your own code
 - Controls to interact with the preview
 - Documentation rendered from Markdown
+- Many other features!
+
+## Why should I use Histoire?
+
+Histoire is built from the ground up to be a Vite-native Story builder. Our core values when designing Histoire are:
+
+- **Native to Vite projects**: By reusing your Vite config, it takes less time setting up and more time writing stories. Same building pipeline means no duplicate effort and configuration! Out-of-the-box support of TypeScript, JSX, Styles...
+
+- **Idiomatic**: No mandatory JSX-oriented and funky template/args syntax! Write your story naturally in either `.vue` files, `.svelte` files, JSX or whatever feel the most at home with the framework you are using in the rest of your project. We also want to have the least amount of Histoire API leaking into your story code.
+
+- **Fast and light**: Enjoy writing stories using Vite instant server startup and instant HMR! Books built with Histoire will be fast in production as well thanks to code-splitting and lean bundle sizes.
+
+- **Customizable**: You can very easily change the look and feel to match your branding, or install plugins to extend Histoire's features.
+
+- **Great User Experience**: We care about UX and we strive to make the Histoire UI as beautiful and intuitive as possible. It also supports phones!
+
+## Features
+
+Here are some highlights of our favorite features:
+
+### :zap: Dynamic source
+
+The copiable source code is an important part of the documentation purpose of stories.  
+For supported frameworks, Histoire can generate the template/JSX/source code that you can one-click-copy and paste in your project.
+
+### :bento: Variant grids
+
+Display many variants of your story on a single grid page. Finally, you can glance at all the possible buttons at once.
+
+### :book: Markdown docs
+
+Add documentation to your stories with (extendable) Markdown with code snippets and syntax highlighting.
+
+### :moon: Dark theme
+
+Rest your eyes with the alternative darker theme for your book.  
+Change the story background (with an optional checkerboard) to test your design in different situations.
+
+### :iphone: Responsive testing
+
+Resize the preview to test your design on different screen sizes. Customize the presets to your liking!
+
+### :musical_keyboard: Flexible controls
+
+Put your own components and logic in the story controls pane! Or use the [builtin controls](https://controls.histoire.dev).
+
+### :camera: Visual regression testing
+
+Take snapshots of your stories when your book is built on your CI, with Percy support.
+
+### :art: Automatic design tokens
+
+Histoire will automatically detect your Tailwind CSS configuration and generate design system stories for you.
+
+### :mag: Fast fuzzy search
+
+A real search index is built in your book! Search for your stories or even text in your documentation without the need for a dedicated service. Plus it's really fast!
 
 ## Early access
 
@@ -73,5 +130,5 @@ The early access will last a few weeks until we finish polishing the documentati
 | [Svelte](https://svelte.dev/) | - | Planned | - | - |
 | [Solid](https://www.solidjs.com/) | - | Planned | - | - |
 | [Angular](https://angular.io/) | - | TBD | - | - |
-| [React](https://reactjs.org/) | - | [Alternative](https://www.ladle.dev) | - | - |
+| [React](https://reactjs.org/) | - | TBD ([Alternative](https://www.ladle.dev)) | - | - |
 
