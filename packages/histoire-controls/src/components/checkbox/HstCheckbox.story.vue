@@ -9,7 +9,10 @@ function initState () {
 </script>
 
 <template>
-  <Story title="HstCheckbox">
+  <Story
+    title="HstCheckbox"
+    :layout="{ type: 'single', iframe: false }"
+  >
     <Variant
       title="playground"
       :init-state="initState"

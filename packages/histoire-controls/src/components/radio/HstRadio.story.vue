@@ -22,7 +22,10 @@ function initState () {
 </script>
 
 <template>
-  <Story title="HstRadio">
+  <Story
+    title="HstRadio"
+    :layout="{ type: 'single', iframe: false }"
+  >
     <Variant
       title="playground"
       :init-state="initState"
